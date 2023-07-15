@@ -1,0 +1,95 @@
+.tabs-project {
+  background-color: #f8fafc;
+  min-height: 100vh;
+  padding: 5rem 0;
+  display: grid;
+  place-items: center;
+}
+.tabs-project .container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  gap: 2rem;
+}
+.tabs-project .container .loading,
+.tabs-project .container .error {
+  font-size: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tabs-project .container .error {
+  color: red;
+}
+.tabs-project .container .filters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.tabs-project .container .filters .tab {
+  padding: 0.5rem;
+}
+.tabs-project .container .filters .tab.active {
+  border-bottom: 1px solid #14b8a6;
+}
+@media (min-width: 1023px) {
+  .tabs-project .container {
+    flex-direction: row;
+    justify-content: start;
+    gap: 5rem;
+    padding: 2rem 5rem;
+  }
+  .tabs-project .container .filters {
+    width: fit-content;
+    flex-direction: column;
+  }
+  .tabs-project .container .filters .tab {
+    width: 100%;
+    padding-left: 3rem;
+    cursor: pointer;
+  }
+  .tabs-project .container .filters .tab.active {
+    border-bottom: none;
+    border-left: 1px solid #14b8a6;
+  }
+}
+.tabs-project .container .person-details .job-title {
+  color: #0f172a;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin-bottom: 0.75rem;
+}
+.tabs-project .container .person-details .company-name {
+  background-color: #cbd5e1;
+  padding: 0.25rem 0.5rem;
+  color: #334155;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+.tabs-project .container .person-details .dates {
+  color: #64748b;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+.tabs-project .container .person-details .duties .duty {
+  color: #334155;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+.tabs-project .container .person-details .duties .duty:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
